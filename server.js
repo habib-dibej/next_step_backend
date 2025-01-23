@@ -11,8 +11,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'habib.dibej@gmail.com',
-        pass: 'whxe arfw wuvx hzjm', // Remplacez par votre mot de passe d'application
+        user: 'raslensebii100@gmail.com',
+        pass: 'tugw saic tlcm qlrc', // Remplacez par votre mot de passe d'application
     },
 });
 
@@ -20,8 +20,8 @@ app.post('/send-email', async (req, res) => {
     const { firstName, lastName, email, phone, businessName, interests, pack } = req.body;
 
     const mailOptions = {
-        from: 'habib.dibej@gmail.com',
-        to: 'raslensebii100@gmail.com ',
+        from: 'raslensebii100@gmail.com',
+        to: 'nextstep132@gmail.com',
         subject: `New Booking: ${firstName} ${lastName}`,
         text: `
         A new booking has been made with the following details:
